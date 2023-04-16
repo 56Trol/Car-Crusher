@@ -60,12 +60,12 @@ local function destroyCar()
    repeat task.wait()
        car = getCurrentCar()
        if not car then return end
-
+                                           -- x  y   z
        car.PrimaryPart.Velocity = Vector3.new(0, 250, 0)
        car.PrimaryPart.CFrame *= CFrame.Angles(500, 0, 0)
 
        task.wait(.5)
-
+                                            -- x  y    z
        car.PrimaryPart.Velocity = Vector3.new(0, -400, 0)
        car.PrimaryPart.CFrame *= CFrame.Angles(500, 0, 0)
 
