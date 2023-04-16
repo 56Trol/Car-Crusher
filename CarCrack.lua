@@ -84,3 +84,4 @@ while task.wait() do
        destroyCar()
    end
 end
+-- не думай брат, это судьба
